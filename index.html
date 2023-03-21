@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0" />
+    <title>Budjetti appi</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <div class="sub-container">
+          <div class="total-amount-container">
+            <h3>Kuukausitulosi</h3>
+            <p class="hide error" id="budget-error">
+              Arvo ei voi olla tyhjä, tai minuslukuinen!
+            </p>
+            <input
+              type="number"
+              id="total-amount"
+              placeholder="Syötä kokonaissumma"
+            />
+            <button class="submit" id="total-amount-button">Aseta</button>
+          </div>
+          <div class="user-amount-container">
+            <h3>Menot</h3>
+            <p class="hide error">Arvot eivät voi olla tyhjiä!</p>
+            <input
+              type="text"
+              class="product-title"
+              id="product-title"
+              placeholder="Anna kulun nimi"
+            />
+            <input
+              type="number"
+              id="user-amount"
+              placeholder="Syötä kulun hinta"
+            />
+            <button class="submit" id="check-amount">Aseta</button>
+          </div>
+        </div>
+        <!--OUTPUT-->
+        <div class="output-container flex-space">
+          <div>
+            <p>Kokonaistulot</p>
+            <span id="amount">0</span>
+          </div>
+          <div>
+            <p>Menot</p>
+            <span id="expenditure-value">0</span>
+          </div>
+          <div>
+            <p>Saldosi</p>
+            <span id="balance-amount">0</span>
+          </div>
+        </div>
+      </div>
+      <!--LIST-->
+      <div class="list">
+        <h3>Kirjanpito</h3>
+        <div class="list-container" id="list"></div>
+      </div>
+      <script src="script.js"></script>
+    </div>
+  </body>
+</html>
