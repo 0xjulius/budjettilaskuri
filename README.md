@@ -1,4 +1,5 @@
 # budjettilaskuri 1.0
 HTML | CSS | JS
-SITE LIVE: https://julmezha.github.io/budjettilaskuri/
+SITE LIVE: https://0xjulius.github.io/budjettilaskuri/
 
+![SCREENSHOT](budjetti.png)
